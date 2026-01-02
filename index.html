@@ -2,31 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Nexocoin — Sovereign Blockchain Network</title>
+  <title>Nexocoin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta name="description" content="Nexocoin is a sovereign, independent blockchain network designed for security, transparency, and long-term sustainability." />
 
   <style>
     body {
       margin: 0;
+      padding: 0;
       background: #0b0f1a;
       color: #ffffff;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    header {
-      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+    }
+
+    .container {
       text-align: center;
+      max-width: 700px;
       padding: 40px 20px;
     }
 
-    header img {
+    .logo {
       width: 180px;
       margin-bottom: 30px;
     }
@@ -34,145 +32,58 @@
     h1 {
       font-size: 42px;
       letter-spacing: 4px;
-      margin: 0;
+      margin-bottom: 10px;
     }
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      max-width: 800px;
-      margin: 10px auto;
-      color: #cfd6e4;
-      font-size: 17px;
-    }
-
-    section {
-      padding: 100px 20px;
-      border-top: 1px solid #1a2033;
-    }
-
-    .section-title {
-      text-align: center;
+    p.subtitle {
+      font-size: 16px;
+      opacity: 0.7;
       margin-bottom: 40px;
     }
 
-    footer {
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #7d8499;
-      border-top: 1px solid #1a2033;
+    .buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
-    a {
-      color: #9bb0ff;
+    .btn {
+      padding: 14px 26px;
+      border-radius: 6px;
+      background: #1f2a44;
+      color: #ffffff;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      border: 1px solid #2f3c5f;
       text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #2c3a60;
+    }
+
+    .btn.outline {
+      background: transparent;
+      border: 1px solid #4c5fa3;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
+    <img src="assets/logo.webp" alt="Nexocoin Logo" class="logo" />
 
-  <!-- HERO -->
-  <header>
-    <img src="assets/logo.webp" alt="Nexocoin Logo" />
     <h1>NEXOCOIN</h1>
-    <p>Next generation sovereign digital currency</p>
-  </header>
+    <p class="subtitle">Next generation sovereign digital currency</p>
 
-  <!-- WHAT IS -->
-  <section>
-    <div class="section-title">
-      <h2>What is Nexocoin</h2>
+    <div class="buttons">
+      <a href="#" class="btn">WHITEPAPER</a>
+      <a href="#" class="btn">DOCUMENTATION</a>
+      <a href="https://github.com/mendezjavier3567-prog" target="_blank" class="btn">GITHUB</a>
+      <a href="#" class="btn outline">NETWORK STATUS</a>
     </div>
-
-    <p>
-      Nexocoin (NXC) is a sovereign, independent blockchain network designed from the ground up as a base-layer digital currency.
-      It is not a token issued on another blockchain and does not rely on external platforms for consensus, validation, or governance.
-    </p>
-
-    <p>
-      The Nexocoin protocol is engineered to operate as a complete monetary and transactional system, prioritizing long-term
-      stability, transparency, and decentralization.
-    </p>
-  </section>
-
-  <!-- TECHNOLOGY -->
-  <section>
-    <div class="section-title">
-      <h2>Technology</h2>
-    </div>
-
-    <p>
-      Nexocoin implements its own native blockchain architecture, integrating consensus, transaction validation,
-      and monetary issuance directly at the protocol level.
-    </p>
-
-    <p>
-      The network is designed with deterministic behavior, predictable costs, and verifiable on-chain operations,
-      ensuring reliability for real-world usage and long-term scalability.
-    </p>
-  </section>
-
-  <!-- MONETARY POLICY -->
-  <section>
-    <div class="section-title">
-      <h2>Monetary Policy</h2>
-    </div>
-
-    <p>
-      Nexocoin follows a transparent and predefined monetary policy, embedded directly into the protocol.
-      Supply rules are enforced at consensus level, eliminating discretionary issuance and external manipulation.
-    </p>
-
-    <p>
-      The objective is to establish a sustainable digital monetary system with predictable issuance
-      and resistance to arbitrary inflation.
-    </p>
-  </section>
-
-  <!-- ROADMAP -->
-  <section>
-    <div class="section-title">
-      <h2>Roadmap</h2>
-    </div>
-
-    <p>
-      Nexocoin is developed in clearly defined phases, focusing first on protocol integrity,
-      followed by network expansion, tooling, and ecosystem growth.
-    </p>
-
-    <p>
-      Detailed technical milestones and development progress will be published alongside official documentation.
-    </p>
-  </section>
-
-  <!-- DOCUMENTATION -->
-  <section>
-    <div class="section-title">
-      <h2>Documentation</h2>
-    </div>
-
-    <p>
-      Official technical documentation, protocol specifications, and the Nexocoin whitepaper
-      will be released progressively as the network evolves.
-    </p>
-
-    <p>
-      Source code and development updates are publicly available to ensure full transparency.
-    </p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Nexocoin. All rights reserved.</p>
-    <p>
-      <a href="https://github.com/mendezjavier3567-prog" target="_blank">GitHub</a>
-    </p>
-  </footer>
-
+  </div>
 </body>
 </html>

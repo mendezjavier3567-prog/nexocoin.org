@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Nexocoin — Sovereign Digital Currency</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nexocoin (NXC) is a sovereign, independent digital currency with its own native blockchain." />
+  <meta name="description" content="Nexocoin (NXC) is a sovereign, independent digital currency operating on its own native blockchain." />
 
   <style>
     body {
@@ -12,13 +12,15 @@
       background: #0b0f1a;
       color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      display: flex;
-      justify-content: center;
     }
 
     .container {
-      max-width: 900px;
-      padding: 60px 20px 100px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px 120px;
+    }
+
+    header {
       text-align: center;
     }
 
@@ -28,7 +30,7 @@
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 44px;
       letter-spacing: 4px;
       margin-bottom: 10px;
     }
@@ -39,34 +41,16 @@
       margin-bottom: 40px;
     }
 
-    section {
-      margin-top: 80px;
-      text-align: left;
-    }
-
-    section h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      border-bottom: 1px solid #1f2a44;
-      padding-bottom: 10px;
-    }
-
-    p {
-      font-size: 15px;
-      line-height: 1.7;
-      opacity: 0.9;
-    }
-
     .buttons {
-      margin-top: 40px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 16px;
+      margin-bottom: 80px;
     }
 
     .btn {
-      padding: 14px 26px;
+      padding: 14px 28px;
       border-radius: 6px;
       background: #1f2a44;
       color: #ffffff;
@@ -86,11 +70,36 @@
       border: 1px solid #4c5fa3;
     }
 
+    section {
+      margin-top: 90px;
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #1f2a44;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      opacity: 0.9;
+      max-width: 900px;
+    }
+
+    ul {
+      margin-top: 15px;
+      line-height: 1.8;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
     footer {
-      margin-top: 120px;
+      margin-top: 140px;
+      text-align: center;
       font-size: 12px;
       opacity: 0.4;
-      text-align: center;
     }
   </style>
 </head>
@@ -99,15 +108,18 @@
   <div class="container">
 
     <!-- HERO -->
-    <img src="assets/logo.webp" alt="Nexocoin Logo" class="logo" />
-    <h1>NEXOCOIN</h1>
-    <p class="subtitle">Next generation sovereign digital currency</p>
+    <header>
+      <img src="assets/logo.webp" alt="Nexocoin Logo" class="logo" />
+      <h1>NEXOCOIN</h1>
+      <p class="subtitle">Next generation sovereign digital currency</p>
 
-    <div class="buttons">
-      <a href="#download" class="btn">DOWNLOAD WALLET</a>
-      <a href="#technology" class="btn outline">TECHNOLOGY</a>
-      <a href="https://github.com/mendezjavier3567-prog" class="btn outline" target="_blank">GITHUB</a>
-    </div>
+      <div class="buttons">
+        <a href="#whitepaper" class="btn">WHITEPAPER</a>
+        <a href="#wallet" class="btn">WALLET</a>
+        <a href="#technology" class="btn outline">TECHNOLOGY</a>
+        <a href="https://github.com/mendezjavier3567-prog" class="btn outline" target="_blank">GITHUB</a>
+      </div>
+    </header>
 
     <!-- OVERVIEW -->
     <section id="overview">
@@ -118,8 +130,8 @@
         validation, or monetary issuance.
       </p>
       <p>
-        The Nexocoin protocol is designed as a base-layer digital currency focused on security,
-        decentralization, deterministic behavior, and long-term sustainability.
+        Nexocoin is designed as a base-layer monetary system focused on long-term stability, deterministic
+        behavior, cryptographic security, and decentralization.
       </p>
     </section>
 
@@ -127,52 +139,73 @@
     <section id="technology">
       <h2>Technology</h2>
       <p>
-        Nexocoin implements its core components directly at the protocol level, including consensus,
-        transaction validation, monetary issuance, and network governance.
+        The Nexocoin protocol implements all core components directly at the protocol level, including
+        consensus, transaction validation, monetary issuance, and network governance.
       </p>
-      <p>
-        The architecture prioritizes predictable execution, transparent on-chain rules, and minimal
-        external dependencies, ensuring long-term robustness and auditability.
-      </p>
+      <ul>
+        <li>Native blockchain (not built on third-party platforms)</li>
+        <li>Deterministic and transparent protocol rules</li>
+        <li>Peer-to-peer validation without centralized control</li>
+        <li>Designed for long-term sustainability and auditability</li>
+      </ul>
     </section>
 
-    <!-- WALLET DOWNLOAD -->
-    <section id="download">
+    <!-- WHITEPAPER -->
+    <section id="whitepaper">
+      <h2>Whitepaper</h2>
+      <p>
+        The Nexocoin Whitepaper defines the protocol architecture, monetary policy, consensus design,
+        security model, and long-term vision of the network.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn outline">DOWNLOAD WHITEPAPER (PDF)</a>
+      </div>
+    </section>
+
+    <!-- WALLET -->
+    <section id="wallet">
       <h2>Official Wallet</h2>
       <p>
-        The Nexocoin wallet is distributed through official application stores and as a direct download
-        from this website. Direct downloads ensure maximum sovereignty, transparency, and cryptographic
-        verification of the software.
+        Nexocoin provides an official non-custodial wallet distributed through verified channels.
+        Direct downloads from this website will be cryptographically signed and verifiable.
       </p>
 
       <div class="buttons">
-        <a href="#" class="btn">ANDROID APK (Official)</a>
-        <a href="#" class="btn">DESKTOP WALLET</a>
-        <a href="#" class="btn outline">SOURCE CODE</a>
+        <a href="#" class="btn outline">ANDROID APK (Coming Soon)</a>
+        <a href="#" class="btn outline">DESKTOP WALLET (Coming Soon)</a>
+        <a href="https://github.com/mendezjavier3567-prog" class="btn outline" target="_blank">SOURCE CODE</a>
       </div>
-
-      <p style="margin-top:20px; font-size:13px; opacity:0.6;">
-        Always verify cryptographic signatures and checksums when downloading software directly.
-      </p>
     </section>
 
-    <!-- NETWORK -->
-    <section id="network">
-      <h2>Network Status</h2>
+    <!-- ROADMAP -->
+    <section id="roadmap">
+      <h2>Roadmap</h2>
+      <ul>
+        <li><strong>Phase 1:</strong> Core protocol and testnet</li>
+        <li><strong>Phase 2:</strong> Wallet infrastructure and network stabilization</li>
+        <li><strong>Phase 3:</strong> Validator expansion and tooling</li>
+        <li><strong>Phase 4:</strong> Ecosystem growth and governance tooling</li>
+      </ul>
+    </section>
+
+    <!-- VALIDATORS -->
+    <section id="validators">
+      <h2>Validators & Nodes</h2>
       <p>
-        Nexocoin operates as a live peer-to-peer network with independent nodes validating transactions
-        and enforcing protocol rules without centralized control.
+        Nexocoin operates as a decentralized peer-to-peer network. Anyone meeting the technical
+        requirements can run a node and participate in network validation.
       </p>
 
       <div class="buttons">
+        <a href="#" class="btn outline">NODE SETUP GUIDE</a>
         <a href="#" class="btn outline">NETWORK STATUS</a>
-        <a href="#" class="btn outline">BLOCK EXPLORER</a>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-      © Nexocoin — Sovereign digital currency
+      © Nexocoin — Sovereign Digital Currency
     </footer>
 
   </div>

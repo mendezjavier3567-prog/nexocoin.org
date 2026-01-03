@@ -9,7 +9,7 @@
   <style>
     body {
       margin: 0;
-      background: radial-gradient(circle at top, #121a2f, #060b17);
+      background: #0b0f1a;
       color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       display: flex;
@@ -18,7 +18,7 @@
 
     .container {
       max-width: 900px;
-      padding: 60px 20px 100px;
+      padding: 60px 20px 120px;
       text-align: center;
     }
 
@@ -66,8 +66,8 @@
     }
 
     .btn {
-      padding: 14px 28px;
-      border-radius: 8px;
+      padding: 14px 26px;
+      border-radius: 6px;
       background: #1f2a44;
       color: #ffffff;
       font-size: 13px;
@@ -79,7 +79,6 @@
 
     .btn:hover {
       background: #2c3a60;
-      transform: translateY(-1px);
     }
 
     .btn.outline {
@@ -87,8 +86,14 @@
       border: 1px solid #4c5fa3;
     }
 
+    .btn.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
     footer {
-      margin-top: 140px;
+      margin-top: 120px;
       font-size: 12px;
       opacity: 0.4;
       text-align: center;
@@ -105,9 +110,8 @@
     <p class="subtitle">Next generation sovereign digital currency</p>
 
     <div class="buttons">
-      <a href="#wallet" class="btn">DOWNLOAD WALLET</a>
+      <a href="whitepaper.pdf" class="btn">WHITEPAPER (PDF)</a>
       <a href="#technology" class="btn outline">TECHNOLOGY</a>
-      <a href="https://nexocoin.org/whitepaper.pdf" class="btn outline" target="_blank">WHITEPAPER (PDF)</a>
       <a href="https://github.com/mendezjavier3567-prog/nexocoin" class="btn outline" target="_blank">GITHUB</a>
     </div>
 
@@ -115,13 +119,13 @@
     <section id="overview">
       <h2>Overview</h2>
       <p>
-        Nexocoin (NXC) is a sovereign, independent digital currency operating on its own native blockchain.
-        It is not issued as a token on any external platform and does not rely on third-party networks
-        for consensus, validation, or monetary issuance.
+        Nexocoin (NXC) is a sovereign digital currency operating on its own native blockchain.
+        It is not a token and does not depend on external platforms for consensus, validation,
+        or monetary issuance.
       </p>
       <p>
-        The Nexocoin protocol is engineered as a base-layer financial system with deterministic execution,
-        transparent on-chain rules, and long-term economic sustainability.
+        The protocol is engineered for long-term stability, deterministic behavior, and full
+        on-chain transparency.
       </p>
     </section>
 
@@ -129,12 +133,12 @@
     <section id="technology">
       <h2>Technology</h2>
       <p>
-        Nexocoin integrates consensus, transaction validation, and monetary policy directly at the
-        protocol level. All critical components are native to the network.
+        Nexocoin implements all core components directly at the protocol level, including
+        consensus, transaction validation, and monetary policy.
       </p>
       <p>
-        The architecture prioritizes decentralization, predictable behavior, and resilience against
-        external dependencies, ensuring long-term robustness and auditability.
+        The architecture is designed to be auditable, predictable, and resilient,
+        prioritizing decentralization and security over complexity.
       </p>
     </section>
 
@@ -142,13 +146,13 @@
     <section id="wallet">
       <h2>Wallet & Official App</h2>
       <p>
-        The Nexocoin wallet will be distributed through official application stores and direct
-        cryptographically verifiable downloads from this website.
+        The Nexocoin wallet will be distributed through official application stores and
+        direct cryptographic downloads from this website.
       </p>
 
       <div class="buttons">
-        <a href="#" class="btn">ANDROID (COMING SOON)</a>
-        <a href="#" class="btn">DESKTOP WALLET (COMING SOON)</a>
+        <a class="btn disabled">ANDROID (COMING SOON)</a>
+        <a class="btn disabled">DESKTOP WALLET (COMING SOON)</a>
         <a href="https://github.com/mendezjavier3567-prog/nexocoin" class="btn outline" target="_blank">SOURCE CODE</a>
       </div>
     </section>
@@ -157,13 +161,13 @@
     <section id="network">
       <h2>Network & Validators</h2>
       <p>
-        Nexocoin operates as a decentralized peer-to-peer network of independent nodes enforcing
-        protocol rules without centralized authority.
+        Nexocoin operates as a decentralized peer-to-peer network of independent nodes
+        enforcing protocol rules without centralized authority.
       </p>
 
       <div class="buttons">
-        <a href="#" class="btn outline">NETWORK STATUS (SOON)</a>
-        <a href="#" class="btn outline">RUN A NODE (SOON)</a>
+        <a class="btn outline disabled">NETWORK STATUS (SOON)</a>
+        <a class="btn outline disabled">RUN A NODE (SOON)</a>
       </div>
     </section>
 
